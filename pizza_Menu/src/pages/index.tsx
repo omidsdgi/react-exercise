@@ -63,19 +63,19 @@ const pizzaData = [
 
 export default function Home() {
     return (
-        <div
-            className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center border-[#edc84b] min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
-        >
-            <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-                <Header/>
+        <div className="grid grid-rows-[auto_1fr_auto] items-center justify-items-center border-[#edc84b]
+        min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+
+            {/* هدر */}
+            <Header />
+
+            {/* محتوای اصلی */}
+            <main className="flex flex-col gap-8 items-center sm:items-start w-full">
                 <Menu />
-                <Footer/>
-
-
             </main>
-            <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
 
-            </footer>
+            {/* فوتر */}
+            <Footer />
         </div>
     );
 }
