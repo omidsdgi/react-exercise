@@ -1,9 +1,15 @@
+
 @import "tailwindcss";
 
 @theme {
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
   --background: #ffffff;
@@ -19,6 +25,10 @@
 
 body {
   color: var(--foreground);
+<<<<<<< HEAD
   background: #fefefe;
+=======
+  background: var(--background);
+>>>>>>> 371d4f8 (implement index tsx)
   font-family: Arial, Helvetica, sans-serif;
 }
