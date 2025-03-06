@@ -19,7 +19,7 @@ const submitHandler = (e: FormEvent<HTMLFormElement>) => {
     return (
         <form onSubmit={submitHandler}>
             <input type="text" name={"cityName"} className={"border rounded p-3"} onChange={cityNameChangeHandler} value={nameState} placeholder="Search City" />
-            <input type="submit" className={"bg-primary px-6 py-3 ml-3 text-white rounded"}  value={"search"} />
+            <input type="submit" className={"bg-primary px-6 py-3 ml-3 text-white font-bold rounded"}  value={"search"} />
         </form>
     );
 }
